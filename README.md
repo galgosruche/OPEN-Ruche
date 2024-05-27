@@ -52,6 +52,34 @@ We can see the representation of the battery’s voltage. Since the MKR WAN has 
 
 ![image](https://github.com/galgosruche/OPEN-Ruche/assets/168517667/6c030098-af06-42f7-96e6-e6f57c0f0464)
 
+### PCB Schematic
+
+To create the routing layout using the KiCad software, we will first import a technical library containing MKRWANxxx components. Additionally, we will position 8 connectors representing the 7 sensors along with the previously mentioned voltage regulator.
+
+![image](https://github.com/galgosruche/OPEN-Ruche/assets/168517667/e770e0e9-acd5-42f3-a5d2-8f7805084d4b)
+
+## Hardware Setup
+
+In order to be able to assure the connection and the transmission of the data, we have to connect the components in an efficient and smart way. 
+
+## MKRWAN 
+
+It is the central piece of the device; it is the link between all the other components and it is responsible for the data processing and the provision of energy. The code we write help us control everything through de MKRWAN and guaranty the LoRaWAN communication.
+
+## SOFTWARE PREREQUISITES 
+1.	Hardware connections: connect all the sensors, the power source and your computer to the MKRWAN. 
+2.	Arduino IDE: Make sure to have downloaded the Arduino IDE to pilot the MKRWAN via the code. 
+3.	LoRaWAN: Get beforehand the network provider, in our case The Things Network, to configure the LoRaWAN connectivity.
+4.	Installations: Install the different libraries necessary for the sensors and make sure to have updated the AppEUI and AppKey variables of TTN.
+5.	Calibration of the weight sensor: We have to calibrate the weight sensor beforehand and here are the different steps you have to follow in order to do so;
+a.	Choose a reference weight with an accurate measure and prioritize one in the range of the hive’s weight. 
+b.	Place the selected object on the sensor and make sure the sensor is stabilized to have a precise measure.
+c.	Keep a record of the raw value read corresponding to the measured weight 
+d.	Calculate the calibration factor with the following equation: 
+Calibration Factor = Reference Weight (grams) / Raw Value
+e.	Calculate the weights of the measured objects by applying the CF and multiplying the raw values by the CF.
+
+
 
 
 
