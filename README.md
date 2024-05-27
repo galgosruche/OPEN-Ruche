@@ -46,3 +46,12 @@ This waterproof digital ambient light sensor is designed to deliver accurate mea
 The monitoring system operates on a rechargeable LiPo battery with a nominal voltage of 3.7V and a maximum voltage of approximately 4.2V, ensuring autonomy and continuous operation. A solar panel is integrated in order to continuously recharge the battery. This system is made for sustainability and energy efficiency. 
 We use the TPL5110 power management module to manage the power consumption to ensure a sufficient battery life. It allows the system to be supplied only when it’s necessary.
 
+### Consumption: 
+
+We can see the representation of the battery’s voltage. Since the MKR WAN has to receive 3.3 V, we use a voltage divider with a R1/R2 ratio of 0.786, knowing that we have to use resistances with high values to limit the current the best way we can.
+
+![image](https://github.com/galgosruche/OPEN-Ruche/assets/168517667/6c030098-af06-42f7-96e6-e6f57c0f0464)
+
+
+
+
