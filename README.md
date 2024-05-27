@@ -79,7 +79,20 @@ d.	Calculate the calibration factor with the following equation:
 Calibration Factor = Reference Weight (grams) / Raw Value
 e.	Calculate the weights of the measured objects by applying the CF and multiplying the raw values by the CF.
 
+### Code summary and structure 
 
+ZZZZZZZZZZZZZZZZZ
+
+### Libraries
+
+## The Things Network and BEEP
+
+The Things Network is a payload formatter that decodes the sent data by the MKRWAN and converts them in treatable values for us to describe and use.
+After that, the data is formatted following the Beep API rules and is sent to the Beep API through a webhook. The Beep-API ensures the visualization of the data as an interface made for the final users of the device.
+
+### BEEP interface 
+
+![image](https://github.com/galgosruche/OPEN-Ruche/assets/168517667/b4633e36-7632-4635-8582-c16a449606e1)
 
 
 
