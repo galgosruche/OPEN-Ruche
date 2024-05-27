@@ -58,6 +58,8 @@ To create the routing layout using the KiCad software, we will first import a te
 
 ![image](https://github.com/galgosruche/OPEN-Ruche/assets/168517667/e770e0e9-acd5-42f3-a5d2-8f7805084d4b)
 
+The image above displays the actual PCB schematic, providing a visual representation of the board's layout, connectors, and sensor interfaces.
+
 ## Hardware Setup
 
 In order to be able to assure the connection and the transmission of the data, we have to connect the components in an efficient and smart way. 
