@@ -87,6 +87,22 @@ ZZZZZZZZZZZZZZZZZ
 
 ### Libraries
 
+1. MKRWAN.h: This library is used with Arduino MKR WAN 1300 boards, which are designed for connectivity over LoRaWAN networks. It provides functions to facilitate communication over a LoRa network, making it easier to send and receive data wirelessly over long distances.
+
+2. Wire.h: A standard library included with the Arduino IDE, used for I2C communication. The Wire library allows Arduino boards to communicate with I2C / TWI (Two Wire Interface) devices like sensors, EEPROMs, and other microcontrollers. It is essential for connecting and retrieving data from devices that support I2C.
+
+3. HX711.h: This library is specifically used to interface with the HX711 load cell amplifier. The HX711 module is commonly used in electronic scales and consists of a precision 24-bit analog-to-digital converter (ADC) designed for weigh scales and industrial control applications to interface directly with a bridge sensor.
+
+4. DHT.h: The DHT library is used to interface with DHT series humidity and temperature sensors, notably the DHT22 and DHT11 models. These sensors are popular due to their ability to provide both temperature and relative humidity readings as digital output.
+
+5. OneWire.h: This library is crucial for handling the OneWire communication protocol, which is typically used for devices like the DS18B20 temperature sensor. The OneWire protocol requires only one data line (and ground) for communication with the microcontroller, which simplifies wiring and makes it suitable for simple sensor networks.
+
+6. DFRobot_SHT20.h: This library is developed by DFRobot and is used to interface with the SHT20 temperature and humidity sensor. The SHT20 sensor offers a reliable and precise solution for measuring relative humidity and temperature, and it utilizes the I2C interface for communication.
+
+7. DallasTemperature.h: Used in conjunction with the OneWire library, the DallasTemperature library facilitates the interaction with Dallas OneWire temperature sensors like the DS18B20. This library simplifies the process of reading temperatures from multiple sensors on a single data line.
+
+Each library serves a specific function related to sensor interfacing and data handling in embedded systems and IoT applications, aiding developers in creating complex, sensor-driven projects with ease.
+
 ## The Things Network and BEEP
 
 The Things Network is a payload formatter that decodes the sent data by the MKRWAN and converts them in treatable values for us to describe and use.
