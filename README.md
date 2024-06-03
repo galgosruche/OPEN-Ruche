@@ -140,6 +140,7 @@ After that, the data is formatted following the Beep API rules and is sent to th
 
 ![image](https://github.com/galgosruche/OPEN-Ruche/assets/168517667/b4633e36-7632-4635-8582-c16a449606e1)
 
+## Final look
 
 ![IMG_7287](https://github.com/galgosruche/OPEN-Ruche/assets/168517667/49222833-aadb-4168-8382-569d66e369e8)
 
