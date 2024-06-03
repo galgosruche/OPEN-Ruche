@@ -83,7 +83,35 @@ e.	Calculate the weights of the measured objects by applying the CF and multiply
 
 ### Code summary and structure 
 
-ZZZZZZZZZZZZZZZZZ
+### Definitions and Global Variables: Several constants and variables are defined for use in the program:
+  Pin assignments for various sensors.
+  Calibration factors and addresses for the sensors.
+  Objects are instantiated for each sensor.
+
+### Setup Function:
+  Initializes serial communication.
+  Establishes settings for each sensor like scale calibration and baseline setting (tare).
+  Initializes the LoRa modem and sets up parameters for the LoRa network (like frequency and data rate).
+
+ ### Main Loop:
+  The loop contains a connection routine for the LoRa network, attempting to connect if not already connected.
+  Sensor readings are taken periodically, including weight, temperature, humidity, and light.
+  The DHT22 sensor measures ambient temperature and humidity.
+  The HX711 scale measures weight and allows for recalibration through serial commands.
+  The SEN0562 light sensor calculates lux values.
+  The SEN0227 and OneWire sensors provide additional temperature and humidity readings.
+  Battery voltage and percentage are calculated and displayed.
+  Finally, sensor data is packaged and sent over the LoRa network.
+
+  ### Auxiliary Functions:
+  readReg function to facilitate I2C communication, particularly for reading from the light sensor.
+
+### Summary of Code Functionality
+
+Data Collection: The code collects data from a variety of environmental sensors, consolidating temperature, humidity, weight, and light levels.
+Data Transmission: Using a LoRaWAN module, the collected data is transmitted to a remote server or gateway, which is crucial for IoT applications in remote monitoring or agricultural sectors.
+Dynamic Interaction: The program listens for serial input to adjust calibration factors for the weight sensor dynamically, which is useful for calibration without needing to modify and re-upload the code.
+Energy Efficiency: Implements low power sleep functionality to save energy, critical for battery-operated remote sensors.
 
 ### Libraries
 
